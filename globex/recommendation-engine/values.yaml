@@ -75,9 +75,10 @@ kafka:
   userId: ""
   password: ""
   streams:
-    topics: globex.tracking
+    topics: globex.tracking, globex.product-scores
     replicationFactor: 1
     commitIntervalMs: 10000
     applicationId: globex.recommendation
   topics:
     trackingEvent: globex.tracking
+    productScores: globex.product-scores
