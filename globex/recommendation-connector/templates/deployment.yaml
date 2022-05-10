@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "recommendation-connector.name" . }}
+  labels:
+    {{- include "recommendation-connector.labels" . | nindent 4 }}
+    app.openshift.io/runtime: camel
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "recommendation-connector.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "recommendation-connector.selectorLabels" . | nindent 8 }}
+    spec:
+      serviceAccountName: {{ include "recommendation-connector.serviceAccountName" . }}
+      serviceAccount: {{ include "recommendation-connector.serviceAccountName" . }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: {{ .Values.ports.httpPortName }}
+              containerPort: {{ .Values.ports.httpPort }}
+              protocol: TCP
+          livenessProbe:
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - mountPath: /deployments/config
+              name: config
+      volumes:
+        - name: config
+          secret:
+            secretName: {{ include "recommendation-connector.name" . }}
