@@ -5,5 +5,11 @@ dependencies:
 - name: kafka-topics
   repository: file://kafka-topics
   version: 0.1.0
-digest: sha256:2691ab484aa6402ef16721a6c47b1547e13482abf7f066191cda5590ee0cf0d0
-generated: "2023-01-20T15:34:33.280089764+01:00"
+- name: inventory-db
+  repository: file://kafka-topics
+  version: 0.1.0
+- name: catalog-db
+  repository: file://kafka-topics
+  version: 0.1.0
+digest: sha256:270199d8cde39ceae855dbcdf4de16598232f6b42d9721a2ed5c87d7f9c47925
+generated: "2023-01-20T15:59:22.543032589+01:00"
