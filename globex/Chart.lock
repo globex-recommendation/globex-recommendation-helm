@@ -1,24 +1,6 @@
 dependencies:
-- name: inventory-service
-  repository: file://inventory-service
+- name: kafka-broker
+  repository: file://kafka-broker
   version: 0.1.0
-- name: inventory-db
-  repository: file://inventory-db
-  version: 0.1.0
-- name: catalog-service
-  repository: file://catalog-service
-  version: 0.1.0
-- name: catalog-db
-  repository: file://catalog-db
-  version: 0.1.0
-- name: globex-ui
-  repository: file://globex-ui
-  version: 0.1.0
-- name: recommendation-engine
-  repository: file://recommendation-engine
-  version: 0.1.0
-- name: activity-tracking
-  repository: file://activity-tracking
-  version: 0.1.0
-digest: sha256:edf82371900355553e10b88685567267d02f04a2c996e22b276a02b510c17a97
-generated: "2022-11-08T20:34:45.20895859+01:00"
+digest: sha256:2d372d48ea9bfd8a053b19cd71418739aabf8a05bddc91f4d609dcb0b5fb087b
+generated: "2023-01-20T14:30:17.883763431+01:00"
