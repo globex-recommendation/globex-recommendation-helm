@@ -2,5 +2,8 @@ dependencies:
 - name: kafka-broker
   repository: file://kafka-broker
   version: 0.1.0
-digest: sha256:2d372d48ea9bfd8a053b19cd71418739aabf8a05bddc91f4d609dcb0b5fb087b
-generated: "2023-01-20T14:30:17.883763431+01:00"
+- name: kafka-topics
+  repository: file://kafka-topics
+  version: 0.1.0
+digest: sha256:2691ab484aa6402ef16721a6c47b1547e13482abf7f066191cda5590ee0cf0d0
+generated: "2023-01-20T15:34:33.280089764+01:00"
