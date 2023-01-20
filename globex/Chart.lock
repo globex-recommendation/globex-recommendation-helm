@@ -6,10 +6,19 @@ dependencies:
   repository: file://kafka-topics
   version: 0.1.0
 - name: inventory-db
-  repository: file://kafka-topics
+  repository: file://inventory-db
   version: 0.1.0
 - name: catalog-db
-  repository: file://kafka-topics
+  repository: file://catalog-db
   version: 0.1.0
-digest: sha256:270199d8cde39ceae855dbcdf4de16598232f6b42d9721a2ed5c87d7f9c47925
-generated: "2023-01-20T15:59:22.543032589+01:00"
+- name: inventory-service
+  repository: file://inventory-service
+  version: 0.1.0
+- name: catalog-service
+  repository: file://catalog-service
+  version: 0.1.0
+- name: globex-ui
+  repository: file://globex-ui
+  version: 0.1.0
+digest: sha256:caa740ad02336f929737ecf7fa775a8b6779acca7647d3ba5f7029388773f229
+generated: "2023-01-20T16:18:33.777762581+01:00"
