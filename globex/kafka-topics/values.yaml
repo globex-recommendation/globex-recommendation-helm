@@ -7,6 +7,9 @@ kafka:
     - name: globex.tracking
       partitions: 1
       retention: -1
+    - name: globex.orders
+      partitions: 1
+      retention: -1
 
 argocd:
   enabled: true
