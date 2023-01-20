@@ -52,14 +52,15 @@ readinessProbe:
   periodSeconds: 10
   timeoutSeconds: 3
 
-securityContext:
-  allowPrivilegeEscalation: false
-  runAsNonRoot: true
-  seccompProfile:
-    type: RuntimeDefault
-  capabilities:
-    drop:
-      - ALL
+securityContext: {}
+  # for OpenShift 4.11:
+  # allowPrivilegeEscalation: false
+  # runAsNonRoot: true
+  # seccompProfile:
+  #   type: RuntimeDefault
+  # capabilities:
+  #   drop:
+  #     - ALL
 
 service:
   type: ClusterIP

@@ -12,14 +12,15 @@ ports:
   pqsqlPortName: postgresql
   pgsqlPort: 5432
 
-securityContext:
-  allowPrivilegeEscalation: false
-  runAsNonRoot: true
-  seccompProfile:
-    type: RuntimeDefault
-  capabilities:
-    drop:
-      - ALL
+securityContext: {}
+  # for OpenShift 4.11:
+  # allowPrivilegeEscalation: false
+  # runAsNonRoot: true
+  # seccompProfile:
+  #   type: RuntimeDefault
+  # capabilities:
+  #   drop:
+  #     - ALL
 
 podAnnotations: {}
 
