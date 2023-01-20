@@ -20,5 +20,8 @@ dependencies:
 - name: globex-ui
   repository: file://globex-ui
   version: 0.1.0
-digest: sha256:caa740ad02336f929737ecf7fa775a8b6779acca7647d3ba5f7029388773f229
-generated: "2023-01-20T16:18:33.777762581+01:00"
+- name: kafdrop
+  repository: file://kafdrop
+  version: 0.1.0
+digest: sha256:8d9494d9d5a9402b06008d9153e4f50164bb97a270f14f921d006afd8248da79
+generated: "2023-01-20T16:31:25.883444223+01:00"
