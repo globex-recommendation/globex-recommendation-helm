@@ -33,4 +33,4 @@ dependencies:
   repository: file://activity-tracking-simulator
   version: 0.1.0
 digest: sha256:6276894ae0df1615e5eaeaba40b497483476d72604a33c30a4b1eee8f88ee8b3
-generated: "2023-01-20T16:56:10.972462391+01:00"
+generated: "2023-01-20T17:31:12.365762528+01:00"
