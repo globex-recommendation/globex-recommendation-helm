@@ -23,5 +23,11 @@ dependencies:
 - name: kafdrop
   repository: file://kafdrop
   version: 0.1.0
-digest: sha256:8d9494d9d5a9402b06008d9153e4f50164bb97a270f14f921d006afd8248da79
-generated: "2023-01-20T16:31:25.883444223+01:00"
+- name: activity-tracking
+  repository: file://activity-tracking
+  version: 0.1.0
+- name: recommendation-engine
+  repository: file://recommendation-engine
+  version: 0.1.0
+digest: sha256:740325a8bd4350fc29fb696b3ba587ba475836766c436be42fc3b8a07cabe8e3
+generated: "2023-01-20T16:43:18.290104576+01:00"

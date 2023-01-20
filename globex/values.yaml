@@ -27,19 +27,7 @@ globex-ui:
 recommendation-engine:
   route:
     enabled: true
-  kafka:
-    bootstrapServer: ""
-    securityProtocol: SASL_SSL
-    saslMechanism: PLAIN
-    userId: ""
-    password: ""
 
 activity-tracking:
   route:
     enabled: true
-  kafka:
-    bootstrapServer: ""
-    securityProtocol: SASL_SSL
-    saslMechanism: PLAIN
-    userId: ""
-    password: ""
