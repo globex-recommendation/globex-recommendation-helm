@@ -32,5 +32,8 @@ dependencies:
 - name: activity-tracking-simulator
   repository: file://activity-tracking-simulator
   version: 0.1.0
-digest: sha256:6276894ae0df1615e5eaeaba40b497483476d72604a33c30a4b1eee8f88ee8b3
-generated: "2023-01-20T17:42:09.453806086+01:00"
+- name: order-placement
+  repository: file://order-placement
+  version: 0.1.0
+digest: sha256:33b54915b4cac279713829f12344003cb26f6cd8875cae849d6089038474fbe8
+generated: "2023-01-23T10:31:47.626998438+01:00"
